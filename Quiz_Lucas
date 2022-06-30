@@ -1,0 +1,442 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class cinema {
+
+	public static void main(String[] args) {
+		
+		//Criando o scanner
+		Scanner tec = new Scanner(System.in);
+		
+		//definindo variáveis em string
+		String usuario;
+		
+		//definindo variáveis em int
+		int op, pontos, piada;
+		
+		System.out.println("--- Quiz do Mundo Cinematográfico ---");
+		
+		System.out.println("Usuário: ");
+		// solicitando para o usuário inserir seu nome
+		usuario = tec.nextLine();
+		
+		pontos = 0;
+		
+		//piadinha
+		System.out.println("Antes de começar o quiz, você sabe para que serve o óculos verde?");
+		System.out.println("1 - Sim");
+		System.out.println("2 - Não");
+		piada = tec.nextInt();
+		
+		switch(piada) {
+		
+		case 1:
+			System.out.println("Hm, Sei!");
+			System.out.println(" ");
+			break;
+		case 2:
+			System.out.println("Para verde perto!");
+			System.out.println(" ");
+			break;
+		}
+		
+		//Primeira Questão;
+		
+		System.out.println("Primeira Questão!");
+		
+		System.out.println("Qual é o filme com maior bilheteria do cinema?");
+		System.out.println("1 - Vingadores Ultimato");
+		System.out.println("2 - Avatar");
+		System.out.println("3 - Homem Aranha - Sem volta para Casa");
+		System.out.println("4 - Titanic");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Avatar");
+			break;
+		case 2:
+			System.out.println("Respota Certa!");
+			pontos++;
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Avatar");
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Avatar");
+			break;
+		}
+		
+		System.out.println(" ");
+		//Segunda Questão;
+		System.out.println("Segunda Questão!");
+		
+		System.out.println("Qual é o filme mais longo já produzido?");
+		System.out.println("1 - Senhor dos anéis");
+		System.out.println("2 - O Irlandês");
+		System.out.println("3 - La Flor");
+		System.out.println("4 - Ambiencé");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Ambiencé");
+			System.out.println("O filme possui nada mais do que 30 dias de duração");
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Ambiencé");
+			System.out.println("O filme possui nada mais do que 30 dias de duração");
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Ambiencé");
+			System.out.println("O filme possui nada mais do que 30 dias de duração");
+			break;
+		case 4:
+			System.out.println("Respota Certa!");
+			System.out.println("O filme possui nada mais do que 30 dias de duração");
+			pontos++;
+			break;
+	}
+		
+		System.out.println(" ");
+		//Terceira Questão;
+		System.out.println("Terceira Questão!");
+		
+		System.out.println("O primeiro filme foi produzido em que ano?");
+		System.out.println("1 - 1888");
+		System.out.println("2 - 1889");
+		System.out.println("3 - 1890");
+		System.out.println("4 - 1891");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Certa!");
+			System.out.println("Filmado pelo Francês Louis Le Price em 14 de outubro de 1888, um curta metragem de apenas 2 segundos");
+			pontos++;
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1888");
+			System.out.println("Filmado pelo Francês Louis Le Price em 14 de outubro de 1888, um curta metragem de apenas 2 segundos");
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1888");
+			System.out.println("Filmado pelo Francês Louis Le Price em 14 de outubro de 1888, um curta metragem de apenas 2 segundos");
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1888");
+			System.out.println("Filmado pelo Francês Louis Le Price em 14 de outubro de 1888, um curta metragem de apenas 2 segundos");
+			break;
+
+		}
+		
+		System.out.println(" ");
+		//Quarta Questão
+		System.out.println("Quarta Questão!");
+		
+		System.out.println("Quando é considerado o surgimento do cinema?");
+		
+		System.out.println("1 - 1895");
+		System.out.println("2 - 1897");
+		System.out.println("3 - 1894");
+		System.out.println("4 - 1890");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Certa!");
+			System.out.println("Em 1985 os irmãos Louis e Auguste projetaram pela primeira vez um filme em uma cafeteria em Paris");
+			pontos++;
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1895");
+			System.out.println("Em 1985 os irmãos Louis e Auguste projetaram pela primeira vez um filme em uma cafeteria em Paris");
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1895");
+			System.out.println("Em 1985 os irmãos Louis e Auguste projetaram pela primeira vez um filme em uma cafeteria em Paris");
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1895");
+			System.out.println("Em 1985 os irmãos Louis e Auguste projetaram pela primeira vez um filme em uma cafeteria em Paris");
+			break;
+		}
+		
+		System.out.println(" ");
+		//Quinta Questão
+		System.out.println("Quinta Questão!");
+		
+		System.out.println("Qual é a maior produtora de filmes do mundo?");
+		
+		System.out.println("1 - 21st Century Fox");
+		System.out.println("2 - Sony Pictures Entertainment");
+		System.out.println("3 - The Walt Disney Company");
+		System.out.println("4 - Universal Pictures");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Sony Pictures Entertainment");
+			System.out.println("A sony começou com apenas 8 funcionários, e hoje em dia possui mais de 100 mil funcionários");
+			break;
+		case 2:
+			System.out.println("Respota Certa!");
+			System.out.println("A sony começou com apenas 8 funcionários, e hoje em dia possui mais de 100 mil funcionários");
+			pontos++;
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Sony Pictures Entertainment");
+			System.out.println("A sony começou com apenas 8 funcionários, e hoje em dia possui mais de 100 mil funcionários");
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Sony Pictures Entertainment");
+			System.out.println("A sony começou com apenas 8 funcionários, e hoje em dia possui mais de 100 mil funcionários");
+			break;
+
+		}
+		
+		System.out.println(" ");
+		//Sexta Questão
+		System.out.println("Sexta Questão!");
+		
+		System.out.println("Qual é o país que produz mais filmes?");
+		
+		System.out.println("1 - Brasil");
+		System.out.println("2 - China");
+		System.out.println("3 - Estados Unidos");
+		System.out.println("4 - Índia");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Índia");
+			System.out.println("A empresa cinematográfica Bollywood produz cerca de 1500 filmes por ano");
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Índia");
+			System.out.println("A empresa cinematográfica Bollywood produz cerca de 1500 filmes por ano");
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Índia");
+			System.out.println("A empresa cinematográfica Bollywood produz cerca de 1500 filmes por ano");
+			break;
+		case 4:
+			System.out.println("Respota Certa!");
+			System.out.println("A empresa cinematográfica Bollywood produz cerca de 1500 filmes por ano");
+			pontos++;
+			break;
+
+		}
+		
+		System.out.println(" ");
+		//Sétima Questão
+		System.out.println("Sétima Questão!");
+		
+		System.out.println("Qual o filme com a produção mais cara do mundo?");
+		
+		System.out.println("1 - John Carter: Entre Dois Mundos");
+		System.out.println("2 - Vingadores Ultimato");
+		System.out.println("3 - Piratas do Caribe: Navegando em Águas Misteriosas");
+		System.out.println("4 - Liga da Justiça");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Piratas do Caribe: Navegando em Águas Misteriosas");
+			System.out.println("O filme custou cerca de 410 milhões de dólares para ser produzido");
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Piratas do Caribe: Navegando em Águas Misteriosas");
+			System.out.println("O filme custou cerca de 410 milhões de dólares para ser produzido");
+			break;
+		case 3:
+			System.out.println("Respota Certa!");
+			System.out.println("O filme custou cerca de 410 milhões de dólares para ser produzido");
+			pontos++;
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: Piratas do Caribe: Navegando em Águas Misteriosas");
+			System.out.println("O filme custou cerca de 410 milhões de dólares para ser produzido");
+			break;
+
+		}
+		
+		System.out.println(" ");
+		//Oitava Questão
+		System.out.println("Oitava Questão!");
+		
+		System.out.println("Qual foi o ano em que o cinema veio para o Brasil?");
+		
+		System.out.println("1 - 150 a.C");
+		System.out.println("2 - 1895");
+		System.out.println("3 - 1896");
+		System.out.println("4 - 1897");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1896");
+			System.out.println("Poucos meses após a projeção do primeiro filme, o cinema chegou no Brasil");
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1896");
+			System.out.println("Poucos meses após a projeção do primeiro filme, o cinema chegou no Brasil");
+			break;
+		case 3:
+			System.out.println("Respota Certa!");
+			System.out.println("Poucos meses após a projeção do primeiro filme, o cinema chegou no Brasil");
+			pontos++;
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1896");
+			System.out.println("Poucos meses após a projeção do primeiro filme, o cinema chegou no Brasil");
+			break;
+
+		}
+		
+		System.out.println(" ");
+		//Nona Questão
+		System.out.println("Nona Questão!");
+		
+		System.out.println("Quantos gêneros de filme existem?");
+		
+		System.out.println("1 - 29");
+		System.out.println("2 - 20");
+		System.out.println("3 - 22");
+		System.out.println("4 - 27");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Certa!");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			pontos++;
+			break;
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 29");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 29");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			break;
+		case 4:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 29");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			break;
+
+		}
+		
+		System.out.println(" ");
+		//Décima Questão
+		System.out.println("Décima Questão!");
+		
+		System.out.println("Quando surgiu o primeiro filme 3D da história?");
+		
+		System.out.println("1 - 1920");
+		System.out.println("2 - 1923");
+		System.out.println("3 - 1921");
+		System.out.println("4 - 1922");
+		
+		System.out.println("Escolha uma alternativa: ");
+		op = tec.nextInt();
+		
+		switch(op) {
+		
+		case 1:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1922");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			break;
+
+		case 2:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1922");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			break;
+		case 3:
+			System.out.println("Respota Errada!");
+			System.out.println("A resposta certa é: 1922");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			break;
+		case 4:
+			System.out.println("Respota Certa!");
+			System.out.println("Os gêneros são: Ação, Animação, Aventura, Chanchada, Cinema catástrofe, Comédia, Comédia romântica, Comédia dramática, Comédia de ação, Cult, Documentários, Drama, Espionagem, Erótico, Fantasia, Faroeste (ou western), Ficção científica, Franchise/Séries, Guerra, Machinima, Musical, Filme noir, Policial, Pornochanchada, Pornográfico, Romance, Suspense, Terror (ou horror), Trash.");
+			pontos++;
+			break;
+			
+		}
+		
+		System.out.println("");
+		
+		System.out.println("Sua pontuação foi: " + pontos + " pontos");
+		
+		if(pontos <= 3) {
+			System.out.println("Conhecimento ruim de cinema!");
+		}
+		else if(pontos >= 4 && pontos < 7 ) {
+			System.out.println("Razoável!");
+		}
+		else {
+			System.out.println("Sabe bem sobre cinema hein!");
+		}
+		
+		System.out.println("Poucos meses após a projeção do primeiro filme, o cinema chegou no Brasil");
+		System.out.println("Criador: Lucas");
+	}
+}

@@ -1,0 +1,141 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner tec = new Scanner(System.in);
+
+    int pontos = 0;
+    System.out.print("Digite seu nome:");
+    String nome = tec.nextLine();
+
+    System.out.println("\nDaremos inicio ao quiz "+nome);
+
+    System.out.println("\n1- Qual desses foi o primeiro a ser vendido oficialmente pela sua marca no Brasil?");
+    System.out.println("A- Ford Mustang");
+    System.out.println("B- Camaro");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String primeira = tec.nextLine();
+
+    if(primeira.equalsIgnoreCase("B")){
+        pontos++;    
+    }
+
+    System.out.println("\n2- Qual desses nacionais foi o primeiro a usar Turbocompressor? ");
+    System.out.println("A- Volkswagen Golf 1.8 Turbo");
+    System.out.println("B- Fiat Tempra Turbo");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String segunda = tec.nextLine();
+
+    if(segunda.equalsIgnoreCase("B")){
+        pontos++;
+    }
+
+    System.out.println("\n3- Qual dessas caminhonetes nÃ£o possui motor Diesel? ");
+    System.out.println("A- Renault Duster Oroch");
+    System.out.println("B- Fiat Toro");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String terceira = tec.nextLine();
+
+    if(terceira.equalsIgnoreCase("A")){
+        pontos++;
+    }
+
+    System.out.println("\n4- Qual desses carros foi mais vendido no ano de 2008? ");
+    System.out.println("A- Honda Civic");
+    System.out.println("B- Toyota Corolla");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String quarta = tec.nextLine();
+
+    if(quarta.equalsIgnoreCase("A")){
+        pontos++;
+    }
+
+    System.out.println("\n5- Qual desses carros Ã© fabricado no Brasil? ");
+    System.out.println("A- Audi Q3");
+    System.out.println("B- Audi A6");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String quinta = tec.nextLine();
+
+    if(quinta.equalsIgnoreCase("A")){
+        pontos++;
+    }
+
+    System.out.println("\n6- Qual desses carros Ayrton Senna teve? ");
+    System.out.println("A- Ferrari 360 Modenna");
+    System.out.println("B- Honda NSX");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String sexta = tec.nextLine();
+
+    if(sexta.equalsIgnoreCase("B")){
+        pontos++;
+    }
+
+    System.out.println("\n7- Qual desses carro usa um motor 1.8 atualmente? ");
+    System.out.println("A- Fiat Strada");
+    System.out.println("B- Chevrolet Montana Sport");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String setima = tec.nextLine();
+
+    if(setima.equalsIgnoreCase("A")){
+        pontos++;
+    }
+
+    System.out.println("\n8- Qual Desses carros e mais pÃ´tente? ");
+    System.out.println("A- Audi R8 V8 Spyder (2015)");
+    System.out.println("B- Ferrari 458 Spider (2013)");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String oitava = tec.nextLine();
+
+    if(oitava.equalsIgnoreCase("B")){
+        pontos++;
+    }
+
+    System.out.println("\n9- Qual Desses carros e mais elÃ©trico e mais caro? ");
+    System.out.println("A- Tesla Model S Performance ");
+    System.out.println("B- Taycan Turbo S ");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String nona = tec.nextLine();
+
+    if(nona.equalsIgnoreCase("B")){
+        pontos++;
+    }
+
+    System.out.println("\n10- Em que ano o primeiro carro eletrico foi criado? ");
+    System.out.println("A- 1835 ");
+    System.out.println("B- 1890");
+    System.out.println("c- 1828");
+
+    System.out.print("Informe a opÃ§Ã£o: ");
+
+    String decima = tec.nextLine();
+
+    if(decima.equalsIgnoreCase("C")){
+        pontos++;
+    }
+
+    System.out.println("\nSua PontuaÃ§Ã£o Foi "+pontos+"/10");
+
+
+        tec.close();
+
+    
+    }
+}

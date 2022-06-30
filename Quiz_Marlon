@@ -1,0 +1,317 @@
+//IMPORTAÃƒâ€¡ÃƒÆ’O DO SCANNER PARA A DIGITAÃƒâ€¡ÃƒÆ’O DO USUARIO
+import java.util.Scanner;
+
+public class Quiz {
+    public static void main (String [] args) {
+        System.out.println("");
+        System.out.println("|----------------------------------------------------------|");
+        System.out.println("|                  BEM VINDO AO MEU QUIZ                   |");
+        System.out.println("|----------------------------------------------------------|");
+        System.out.println("");
+
+        //ATRIBUÃƒâ€¡ÃƒÆ’O DA VARIAVEL PARA A DIGITAÃƒâ€¡ÃƒÆ’O DO USUARIO
+        Scanner entrada = new Scanner(System.in);
+        int continua = 1;
+        
+        //UTILIZADO PARA FINALIZAÃƒâ€¡ÃƒÆ’O DO CODIGO
+        boolean sair = false;
+        
+        //INICIO DO LAÃƒâ€¡O DE REPETIÃƒâ€¡ÃƒÆ’O
+        while (continua != 10) {
+
+            System.out.println("|-----------------------------------------------------|");
+            System.out.println("|        ESCOLHA UMA OPÃƒâ€¡ÃƒÆ’O DO NOSSO MENU QUIZ       |");
+            System.out.println("|                                                     |");
+            System.out.println("| 1 --> Jogar                                         |");
+            System.out.println("| 2 --> Sair                                          |");
+            System.out.println("|-----------------------------------------------------|");
+            System.out.println("");
+            //INICIO DA LEITURA DO SCANNER
+            int escolhaMenu = entrada.nextInt();
+            //TERMINO DA LEITURA DO SCANNER
+
+            //INICIO DO PRIMEIRO SWITCH
+            switch(escolhaMenu){
+                case 1:
+                    int resp = 0;
+                    System.out.println("\nConfiguraÃƒÂ§ÃƒÂµes iniciais de jogo.");
+                    //INICIO DELAY
+                    try {
+                        Thread.sleep(2000);
+                    } catch (Exception e) {
+                      e.printStackTrace();
+                    }
+                    //FIM DELAY
+
+                    //ESCOLHA DE JOGADORES (SO FIZ COM 1 PARA DAR TEMPO DE ENTREGAR PARA A PROFESSORA :)
+                    System.out.println("Escolha um numero no menu abaixo para quantidade de jogadores -->");
+                    System.out.println("|-------------------------------|");
+                    System.out.println("|1 --> 1 Jogador                |");
+                    System.out.println("|2 --> Voltar ao menu principal |");
+                    System.out.println("|-------------------------------|");
+                    System.out.println("");
+                    System.out.print("Qual ÃƒÂ© a opÃƒÂ§ÃƒÂ£o desejada?");
+                    //TERMINO DA ESCOLHA
+
+                    //INICIO DA LEITURA DO SCANNER
+                    int opcJogador = entrada.nextInt();
+                    //TERMINO DA LEITURA DO SCANNER
+
+                    //INICIO DO SEGUNDO SWITCH
+                    switch(opcJogador){
+                        case 1:
+                        //UTILIZADO UMA VARIAVEL PT PARA SOMAR A PONTUAÃƒâ€¡ÃƒÆ’O
+                        int pt = 0;
+
+                        //INICIO DAS PERGUNTAS
+                        System.out.println("Digite Seu Nome: ");
+                        String nome = entrada.next();
+
+                        System.out.println("|------------------- PERGUNTA NUMERO 1 --------------------|");
+                        System.out.println("| Em quantas camadas se divide o modelo de referencia OSI? |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> 12 camadas                                          |");
+                        System.out.println("|2 --> 8 camadas                                           |");
+                        System.out.println("|3 --> 2 camadas                                           |");
+                        System.out.println("|4 --> 7 camadas                                           |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 4){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        //TERMINO DA PRIMEIRA PERGUNTA, ASSIM EM SEQUENCIA TODAS AS OUTRAS 9 PERGUNTAS
+                        System.out.println("|------------------- PERGUNTA NUMERO 2 --------------------|");
+                        System.out.println("| Quem foi a primeira pessoa a viajar no EspaÃƒÂ§o?          |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> Yuri Gagarin                                        |");
+                        System.out.println("|2 --> A cadela Laika                                      |");
+                        System.out.println("|3 --> Marcos Pontes                                       |");
+                        System.out.println("|4 --> Buzz Aldrin                                         |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 1){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 3 --------------------|");
+                        System.out.println("| Qual a montanha mais alta do mundo?                      |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> 12 camadas                                          |");
+                        System.out.println("|2 --> 8 camadas                                           |");
+                        System.out.println("|3 --> 2 camadas                                           |");
+                        System.out.println("|4 --> 7 camadas                                           |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 4){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 4 --------------------|");
+                        System.out.println("| Onde se localiza Machu Picchu?                           |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> ColÃƒÂ´mbia                                           |");
+                        System.out.println("|2 --> Peru                                                |");
+                        System.out.println("|3 --> China                                               |");
+                        System.out.println("|4 --> BolÃƒÂ­via                                             |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 2){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 5 --------------------|");
+                        System.out.println("| Que paÃƒÂ­s tem o formato de uma bota?                      |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> ButÃƒÂ£o                                              |");
+                        System.out.println("|2 --> Portugal                                            |");
+                        System.out.println("|3 --> ItÃƒÂ¡lia                                             |");
+                        System.out.println("|4 --> MÃƒÂ©xico                                             |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 3){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 6 --------------------|");
+                        System.out.println("| Quem inventou a lÃƒÂ¢mpada?                                |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> Graham Bell                                         |");
+                        System.out.println("|2 --> Steve Jobs                                          |");
+                        System.out.println("|3 --> Thomas Edison                                       |");
+                        System.out.println("|4 --> Henry Ford                                          |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 3){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 7 --------------------|");
+                        System.out.println("| A que temperatura a ÃƒÂ¡gua ferve?                         |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> -10 Ã‚ÂºC                                             |");
+                        System.out.println("|2 --> 180 Ã‚ÂºC                                             |");
+                        System.out.println("|3 --> 0 Ã‚ÂºC                                               |");
+                        System.out.println("|4 --> 100 Ã‚ÂºC                                             |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 4){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 8 --------------------|");
+                        System.out.println("| Quais sÃƒÂ£o as fases da Lua?                              |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> Nova, cheia, minguante e lua de sangue              |");
+                        System.out.println("|2 --> Nova, crescente, cheia e minguante                  |");
+                        System.out.println("|3 --> Nova, crescente, cheia e minguante                  |");
+                        System.out.println("|4 --> Nova, crescente, cheia, minguante e lua de sangue   |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.println("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 2){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 9 --------------------|");
+                        System.out.println("| Quantos ossos temos no nosso corpo?                      |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> 126                                                 |");
+                        System.out.println("|2 --> 206                                                 |");
+                        System.out.println("|3 --> 18                                                  |");
+                        System.out.println("|4 --> 300                                                 |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 2){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        System.out.println("|------------------- PERGUNTA NUMERO 10 -------------------|");
+                        System.out.println("| Qual o maior planeta do sistema solar?                   |");
+                        System.out.println("|--> Selecione uma OpÃƒÂ§ÃƒÂ£o:                                |");
+                        System.out.println("|1 --> Lua                                                 |");
+                        System.out.println("|2 --> Saturno                                             |");
+                        System.out.println("|3 --> Terra                                               |");
+                        System.out.println("|4 --> JÃƒÂºpiter                                            |");
+                        System.out.println("|----------------------------------------------------------|");
+                        System.out.print("Sua resposta: ");
+                        resp = entrada.nextInt();
+                        System.out.println("|-----------------------------------------------------------|");
+                        if(resp == 4){
+                            System.out.println(nome + " vocÃƒÂª acertou!!!");
+                            pt = pt + 10;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }else{
+                            System.out.println(nome + " vocÃƒÂª errou!!!");
+                            pt = pt + 0;
+                            System.out.println("|-----------------------------------------------------------|");
+                        }
+                        //PONTOS QUE O USUARIO FEZ NA PARTIDA
+                        System.out.println(nome + " vocÃƒÂª fez um total de " + pt + " pontos");
+                        break;
+                        
+                        //CASE 2 SAIDA DO PROJETO
+                        case 2: 
+                        sair = true;
+                        break;
+                        
+                        default:
+                        System.out.println("OpÃƒÂ§ÃƒÂ£o Invalida!!!");
+                        break;
+                    }
+                    //UTILIZADO PARA RETORNAR AO MENU PRINCIPAL OU JOGAR NOVAMENTE 
+                    System.out.println("|----------------------------------------------|");
+                    System.out.println("| Deseja retornar ao MENU PRINCIPAL? [S/N] --> |");
+                    System.out.println("|----------------------------------------------|");
+                    String resposta = entrada.next();
+                    sair = resposta.equalsIgnoreCase("n") ? true : false;
+                    System.out.println("\n");
+
+                    //CASE 2 DO PRIMEIRO SWITCH, FEITO PARA FINALIZAR O MENU
+                    case 2: 
+                    sair = true;
+                    break;
+                    
+                    default:
+                    System.out.println("OpÃƒÂ§ÃƒÂ£o Invalida!!!");
+                    break; 
+                    
+                    
+                }
+            }
+            //WHILE UTILIZADO PARA ENCERRAR O SISTEMA 
+            while(!sair);
+            
+            System.out.println("\n");
+            System.out.println("|----------------- SISTEMA FINALIZADO ------------------|");
+            System.out.println("|                                                       |");
+            System.out.println("|     DESENVOLVIDO POR MARLON EDUARDO MADER Ã¢ï¿½Â¤Ã¯Â¸ï¿½     |");
+            System.out.println("|-------------------------------------------------------|");
+            entrada.close();
+        }
+    }
+    
+    
+    

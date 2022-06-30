@@ -1,0 +1,246 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class quiz {
+	
+	// |･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ|
+	// | Desenvolvedor: Matheus Antunes |
+	// |･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|
+
+	public static void main(String[] args) {
+		
+		Scanner tec = new Scanner(System.in);
+
+		int opcao;
+		int pontos = 0;
+		String espaço;
+		int resposta;
+		String nome;
+		//do {
+		System.out.println("ヽ(〃＾▽＾〃)ﾉ OOOLAA seja bem vindo(a) a esse quiz tosco e mal feito!"); // Bonequinho que apresenta o jogo
+		System.out.println("ヾ(＾∇＾) O quiz é sobre música. 10 perguntas aleatórias sobre cantores, bandas e músicas! Vamos Começar?");
+		System.out.print("(S/N) -> "); // Interação com o bonequinho
+		espaço = tec.next();
+		System.out.println("(ノಠ益ಠ)ノ Não importa. vamo começar sim, n preciso da tua permissão");
+		System.out.print("(ta) -> ");
+		espaço = tec.next();
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("ヽ(゜∇゜)ノ Escolhe uma opção desse menu tosco aí vai");
+		System.out.println("|･ﾟ･ﾟ･-Q U I Z-･ﾟ･ﾟ･|"); // Menuzinho e tal
+		System.out.println("|1) Iniciar     |");
+		System.out.println("|2) Créditos    |");
+		System.out.println("|0) Sair        |");
+		System.out.println("|･ﾟ･ﾟ･-Q U I Z-･ﾟ･ﾟ･|");
+		System.out.print(" -> ");
+		opcao = tec.nextInt();
+		
+		switch(opcao) { // Switch case para as opções
+		
+		case(1): //Case para o jogo todo
+			System.out.println("(ﾟヮﾟ) Iniciando o quiz precário de centavos.");
+			System.out.print("(vamo) -> ");
+			espaço = tec.next();
+			System.out.println("ヾ｜￣ー￣｜ﾉ Mas antes, ó caro jogador, me diga seu nome.");
+			System.out.print("-> ");
+			nome = tec.next();
+			System.out.println("(ಠ_ಠ) Teu nome é " + nome + "?");
+			System.out.println("( ･_･) Assim, não to julgando, mas achei meio méh...");
+			System.out.println("ヘ(^_^ヘ) MAS ENFIM. Vamos para a primeira pergunta " + nome);
+			System.out.print("(bora) -> ");
+			espaço = tec.next();
+			System.out.println("");
+			System.out.println("");
+			System.out.println("");
+			System.out.println("(丿>ロ<)丿 PERRRRRGUNTA NUMERO 1:");
+			System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･Pergunta 1･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|");
+			System.out.println("De qual banda é a famosa música Anna Júlia?");
+			System.out.println("1) Los Hermanos");
+			System.out.println("2) Tribalistas");
+			System.out.println("3) Os Paralamas do Sucesso");
+			System.out.println("4) Titãs");
+			System.out.print(" -> ");
+			resposta = tec.nextInt();
+			if(resposta != 1) { // Se errou
+				System.out.println("(╯°Д°）╯ Mano tu errou. Era Los Hermanos. QUEM NÃO SABE???");}
+			if(resposta == 1) { // Se acertou
+				System.out.println("<(^o^<) AEE tu acertou. Mas tbm, essa era fácil né?");
+				System.out.println("ヽ(ｏ`皿′ｏ)ﾉ UM PONTO PARA GRIFINÓRIA. Quer dizer, pra você.");
+				pontos ++;}
+				System.out.println("(￣▽￣)ノ Agora vamos pra próxima ent");
+				System.out.print("(let's) -> ");
+				espaço = tec.next();
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("└(>o< )┘ PERGUNTA LETRA 2");
+				System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･Pergunta 2･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|");
+				System.out.println("Qual a forma correta de se escrever o nome do vocalista da banda Queen?");
+				System.out.println("1) Fredy Mercury");
+				System.out.println("2) Fredie Mecuri");
+				System.out.println("3) Freddie Mercury");
+				System.out.println("4) Frederico Mercúrio");
+				System.out.print(" -> ");
+				resposta = tec.nextInt();
+				if(resposta != 3) {
+					System.out.println("ヽ(#`Д´)ﾉ Afff n creio, um dos caras mais fodas da história da música e tu erra o nome dele");}
+					System.out.println("(︶︹︶) QUE VERGONHA " + nome + ", QUE VERGONHA");
+				if(resposta == 3) {
+					System.out.println("ヽ(ｏ`皿′ｏ)ﾉ AEEEE isso ai c4c3t3, BOA! ACERTASTE!");
+					pontos ++;}
+					System.out.println("BORA PRA PRÓXIMA!");
+					System.out.print("(aeee) -> ");
+					espaço = tec.next();
+					System.out.println("");
+					System.out.println("");
+					System.out.println("");
+					System.out.println("(=｀ω´=) Agora vamos para a pergunta 3, let's que borann");
+					System.out.print("(boran) -> ");
+					espaço = tec.next();
+					System.out.println("");
+					System.out.println("");
+					System.out.println("");
+					System.out.println("ヽ(^◇^*)/ PERGUNTA 3 E VAMO Q VAMO");
+					System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･Pergunta 3･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|");
+					System.out.println("De quem é este álbum? (BAD)");
+					System.out.println("                                             ^%$g@@@@@@\r\n"
+							+ "                 --_:^-                      ,8@@@@gAu*\r\n"
+							+ "               _S@@@@@@gX_                   ^88%Q@@@@@\r\n"
+							+ "              3@@@@@@@@@@@c               ^^-!&&&&&&@&&\r\n"
+							+ "             X@@@@@gW8g@@@8-  -***;;^ *v_;Fv_F&@ggggg&@\r\n"
+							+ "            *@@@@XEPEcrSg@r     _E*FdTE e_;PL^%8&3^T&&#\r\n"
+							+ "            X@@08vf3ezFX8+       R_ -EG*fi-U-~Q8gg@@ggg\r\n"
+							+ "           -8@@@XJcrJs*;gJ      ^#r*+'3;-T'PTF&g%#XPPP4\r\n"
+							+ "           -!@@@8EtJuJv%y!'            'T*_  _z2@@g@@@@\r\n"
+							+ "           ;@@@@%P25fP@@@@@@#Gu!             ;@g%mXSulr\r\n"
+							+ "       ;P@@@@@@@PPE3yg@@@@@@@@@@@s           !@ttt@ytG@\r\n"
+							+ "      g@@@@@@@@@@ertS%@@@@@@@@@@@g           ~Q6668AbDQ\r\n"
+							+ "     x@@@@@@@@@@@@@@gt@@@@@@@@@@@g,          ;g^^^^^^^^\r\n"
+							+ "    ;@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@J         ^g88*     \r\n"
+							+ "    F@@@@@@@@&@@@@@@@@@@@@@@@@@@@@@@^        ^ggggggM%%\r\n"
+							+ "    r@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@J        _jS@&8M&g%\r\n"
+							+ "    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@g^        ^QgM8GP2tT\r\n"
+							+ "   #@@@@@@@_B@@@@@@@@@@@@@@@@@@@@@&g_        ^@gggggg&@\r\n"
+							+ "  -@M@@@@@_c@@@@@@@@@@@@@@@@@@@@@@@!         _%&&3^cQQb\r\n"
+							+ "  ;@@@@@@2 X@@@@@@@@@@@@@@@@@@@@QD3          _8g@@@@@gD\r\n"
+							+ "   @@@@@@@T-@@@@@@@@@@@@@@@@@@@@#@,          _%%G*-r48#\r\n"
+							+ "   -D@@@@@@@@@@@@@@@@@@@@@@&@8y@Q-           *@GH8@88%@\r\n"
+							+ "     ,8&@@@@@@@@@@@@@@@@@@@@@4yi_             4g&8ztg%i\r\n"
+							+ "       r&@@8%@@@@@@@@@g@@@@DSi^              r@%%%$gg&@\r\n"
+							+ "         ^t#%GEG@@@@@@@%##PG@;               _8gggggggG\r\n"
+							+ "            @@@@@@@@@GSG@%@@@g               _48&@@@g#y\r\n"
+							+ "            ^;;;;;;~___,;_^;;;               -;;;;;;;;;");
+					System.out.println("1) Queen");
+					System.out.println("2) Michael Jackson");
+					System.out.println("3) Elvis Presley");
+					System.out.println("4) The Weeknd");
+					System.out.print(" -> ");
+					resposta = tec.nextInt();
+					if(resposta != 2) {
+						System.out.println("ヽ(ｏ`皿′ｏ)ﾉ ERA O REI DO POP MERDA, COMO TU OUSAAAA");
+						System.out.print("(perdão) -> ");
+						espaço = tec.next();
+						System.out.println("(◣_◢) vaselascar");}
+					if(resposta == 2) {
+						System.out.println("(ノ><)ノ ISSOOO ELE MESMO O MAIORRRR");
+						System.out.println("PONTO!");
+						pontos ++;
+						System.out.print("(rei) -> ");
+						espaço = tec.next();}
+						System.out.println("");
+						System.out.println("");
+						System.out.println("");
+						System.out.println("(づ￣ ³￣)づ Ahora banamos para la quarta perguntita");
+						System.out.print("(bamanos) -> ");
+						espaço = tec.next();
+						System.out.println("ヽ(≧Д≦)ノ	 PERGUNTA NUMBER FOUR");
+						System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･Pergunta 4･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|");
+						System.out.println("Qual é a premiação mais importante do mundo da música?");
+						System.out.println("1) Billboard Music Awards");
+						System.out.println("2) Brit Awards");
+						System.out.println("3) Grammy Awards");
+						System.out.println("4) MTV Music Awards");
+						System.out.print(" -> ");
+						resposta = tec.nextInt();
+						if(resposta != 3) {
+							System.out.println("(¬д¬。) Não véi, é o Grammy Awards, que tem a vitrolinha mano.");}
+						if(resposta == 3) {
+							System.out.println("(๑˃ᴗ˂)ﻭ Olha acertou mesmo. Você sabia ou chutou???");
+							pontos ++;
+							System.out.print("(sim) -> ");
+							espaço = tec.next();}
+							System.out.println("");
+							System.out.println("");
+							System.out.println("");
+							System.out.println("(≧∇≦)/ SEGUINDO! PERGUNTA 5! Metade do caminho (se o dev conseguiu terminar...)");
+							System.out.print("(proxima) -> ");
+							espaço = tec.next();
+							System.out.println("(。-ω-)ﾉ Pergunta 5 vai vai");
+							System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･Pergunta 5･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|");
+							System.out.println("Qual é o albúm pop mais premiado da história?");
+							System.out.println("1) 1989 - Taylor Swift");
+							System.out.println("2) Thriller - Michael Jackson");
+							System.out.println("3) 21 - Adele");
+							System.out.println("4) 24K Magic - Bruno Mars");
+							System.out.print(" -> ");
+							resposta = tec.nextInt();
+							if(resposta != 1) {
+								System.out.println("（;≧皿≦） NÃÃÃOO! Era 1989, a Bíblia do POP. Taylor é a indústria da música!!!");}
+							if(resposta == 1) {
+								System.out.println("ヽ(ｏ`皿′ｏ)ﾉ ISSOOOOOO 1989 é a BÍBLIA DO POP, DA MAIOR TAYLOR SWIFT!");
+								pontos ++;
+								System.out.print("(demais) -> ");
+								espaço = tec.next();}
+							System.out.println("(｡-_-｡ )ﾉ ah agora a próxima pergunta aí e tal, a tu sabe...");
+							System.out.print("(vai) ->");
+							espaço = tec.next();
+							System.out.println("");
+							System.out.println("");
+							System.out.println("");
+							System.out.println("⊂◉‿◉つ Pergunta 6, só de ter mais de 5 já é um milagre");
+							System.out.print("(amem) ->");
+							espaço = tec.next();
+							System.out.println("(¬д¬。)	vai vai, 6 aí");
+							System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･Pergunta 6･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･|");
+							System.out.println("Qual dessas músicas é da Lady Gaga?");
+							System.out.println("1) Don't Start Now");
+							System.out.println("2) Blank Space");
+							System.out.println("3) Mother's Daughter");
+							System.out.println("4) Born This Way");
+							System.out.print(" -> ");
+							resposta = tec.nextInt();
+							if(resposta != 4) {
+								System.out.println("(┛◉Д◉)┛ERRASTE! ERA BORN THIS WAY. UM HINO!");
+								System.out.print("(perdao) -> ");
+								espaço = tec.next();}
+							if(resposta == 4) {
+								System.out.println("ヽ( ´ ∇ ｀ )ノ EXATAMENTE! UM HINO CLÁSSICO!");
+								pontos ++;
+								System.out.print("(incrivel) -> ");
+								espaço = tec.next();}
+								System.out.println("（ミ￣ー￣ミ） Agora acabou, não deu 10 pq não deu tempo. Viva com isso");
+								System.out.println("( ರ Ĺ̯ ರೃ ) Sua pontuação foi " + pontos + ". Podia ser melhor né?");
+							
+							
+						
+					
+				
+			
+			break;
+		case(2): // Case para os créditos
+			System.out.println("|･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟC R É D I T O S･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ･ﾟ");
+			System.out.println("(-_-) Quem fez essa palhaçada foi o Matheus");
+			System.out.println("(-_-)zzz O Antunes. E só");
+			break;
+		case(0): // Case para sair
+			System.out.println("(ㆆ_ㆆ) Vai sair?");
+			System.out.println("( ˘︹˘ ) hm...");
+			System.out.println("(-＿- )ノ Então ta né... tchau");
+			break;
+		}
+		//}while(opcao != 0);
+	}
+	
+}

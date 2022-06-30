@@ -1,0 +1,264 @@
+import java.util.Scanner;
+
+public class pokemon {
+private static Scanner scanner;
+
+public static void main(String[] args) {
+	
+Scanner tec = new Scanner(System.in);
+
+//Visão geral do quis
+System.out.println("=-=-=-=-=-==-=-=-=-=-==-=-=-=-=-==-=-=-=-=-");
+System.out.println("-=-=-=-=-=-= BEM VINDO AO QUIZ =-=-=-=-=-=-");
+System.out.println("=-=-=-=-=-==-     POKEMON     -==-=-=-=-=-=");
+System.out.println(" ");
+
+System.out.println("Digite seu nome: ");
+String nome = tec.nextLine();
+
+//perguntas
+String questao = "Qual das opções é um Pokemon de Água? ";
+String questao2 = "Qual desses Lendários tem uma Mega Evolução? ";
+String questao3 = "Quem criou Entei, Raikou e Suicune? ";
+String questao4 = "Qual desses poderes Arceus tem? ";
+String questao5 = "Qual desses Pokémon são rivais? ";
+String questao6 = "Qual é o pokemon Psiquico mais poderoso? ";
+String questao7 = "Qual pokemon mais famoso da série? ";
+String questao8 = "Que pokemon tem a habilidade de se tranformar? ";
+String questao9 = "Qual o nome completo de Ash? ";
+String questao10 = "Qual desses pokemon é Elétrico ";
+
+boolean respostaCorreta = false;
+//repetição das questões
+
+System.out.println("=-=-=-= PRIMEIRA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+do {
+System.out.println(questao);
+
+System.out.println("1 = Charizard ");
+System.out.println("2 = Rattata ");
+System.out.println("3 = Mewtwo ");
+System.out.println("4 = Greninja ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+ //if para as opções
+if(resposta.equals("4")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= SEGUNDA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+
+do {
+System.out.println(questao2);
+
+System.out.println("1 = Arceus ");
+System.out.println("2 = Giratina ");
+System.out.println("3 = Rayquaza ");
+System.out.println("4 = Celebi ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("3")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= TERCEIRA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+
+do {
+System.out.println(questao3);
+
+System.out.println("1 = Arceus ");
+System.out.println("2 = Latios ");
+System.out.println("3 = Rayquaza ");
+System.out.println("4 = Ho-Oh ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("4")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= QUARTA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+
+do {
+System.out.println(questao4);
+
+System.out.println("1 = Mudar de Pokémon ");
+System.out.println("2 = Mudar de tipo ");
+System.out.println("3 = Mudar de forma ");
+System.out.println("4 = Causar Explosões ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("2")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= QUINTA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+
+do {
+System.out.println(questao5);
+
+System.out.println("1 = Mew e Celebi ");
+System.out.println("2 = Giratina e Rayquaza ");
+System.out.println("3 = Dialga e Palkia ");
+System.out.println("4 = Manaphy e Phione ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("3")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= SEXTA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+
+do {
+System.out.println(questao6);
+
+System.out.println("1 = Pikachu de Alola ");
+System.out.println("2 = Alakazam ");
+System.out.println("3 = Mew ");
+System.out.println("4 = Mewtwo ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("4")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= SÉTIMA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+
+do {
+System.out.println(questao7);
+
+System.out.println("1 = Charizard ");
+System.out.println("2 = Blastoise ");
+System.out.println("3 = Ratata ");
+System.out.println("4 = Pikachu ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("4")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= OITAVA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+do {
+System.out.println(questao8);
+
+System.out.println("1 = Ekans ");
+System.out.println("2 = Abra ");
+System.out.println("3 = Magneton ");
+System.out.println("4 = Ditto ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("4")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= NONA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+do {
+System.out.println(questao9);
+
+System.out.println("1 = Ash Catchum ");
+System.out.println("2 = Ash Catchup ");
+System.out.println("3 = Ash Mostarda ");
+System.out.println("4 = Ash Maionese ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("1")) {
+System.out.println("RESPOSTA CORRETA ");
+}else {
+System.out.println("ERROU SEU BURRO, VAI FAZER UM CURSO ");
+}
+}while (respostaCorreta);
+
+System.out.println(" ");
+System.out.println("=-=-=-= ULTIMA QUESTÃO =-=-=-=-");
+System.out.println(" ");
+
+do {
+System.out.println(questao10);
+
+System.out.println("1 = Zapdos ");
+System.out.println("2 = Giratina ");
+System.out.println("3 = Celebi ");
+System.out.println("4 = Ditto ");
+
+System.out.println("Digite sua resposta: ");
+String resposta = tec.nextLine();
+
+if(resposta.equals("1")) {
+System.out.println("INCRIVELL VOCÊ É UM EXPERT EM POKEMON ");
+}else {
+System.out.println("MEU DEUS, VAI VER DIGIMON E SAI DAQUI ");
+}
+}while (respostaCorreta);
+
+
+
+
+System.out.println(nome + ", PARABÉNSSSSS, espero que você tenha contado sua pontuação ");
+
+}}

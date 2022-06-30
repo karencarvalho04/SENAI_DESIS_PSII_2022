@@ -1,0 +1,153 @@
+import java.util.Scanner;
+
+/*
+ * Autor: Jean Carlos
+ * Data: 24/06/2022
+ */
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+
+        // Define a vÃ¡riavel para armazenar os pontos do jogador
+        int pontos = 0;
+
+        // Armazena o nome do jogador
+        System.out.print("Informe o seu nome: ");
+        String nome = in .nextLine();
+
+        // Primeira pergunta
+        System.out.println("\n1 - \"Digimon Frontier\" Foi qual temporada do anime \"Digimon\"?");
+        System.out.println("A - Quinta Temporada");
+        System.out.println("B - Quarta Temporada");
+        System.out.println("C - Terceira Temporada");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String primeiraPergunta = in.nextLine();
+
+        if (primeiraPergunta.equalsIgnoreCase("B")) {
+            pontos++;
+        }
+
+        // Segunda Pergunta
+        System.out.println("\n2 - No anime Bleach, Ichigo Kurosaki apenas virou Ceifeiro de almas Por causa que ele sem querer Roubou os poderes de...");
+        System.out.println("A - CapitÃ£o Toshiro");
+        System.out.println("B - Renji Abarai");
+        System.out.println("C - Rukia Kuchiki");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String segundaPergunta = in.nextLine();
+
+        if (segundaPergunta.equalsIgnoreCase("C")) {
+            pontos++;
+        }
+
+        // Terceira Pergunta
+        System.out.println("\n3 - Naruto Habita o espÃ­rito de qual Bijuu dentro de seu Corpo?");
+        System.out.println("A - Hachibi");
+        System.out.println("B - Kyuubi");
+        System.out.println("C - Shukaku");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String terceiraPergunta = in.nextLine();
+
+        if (terceiraPergunta.equalsIgnoreCase("B")) {
+            pontos++;
+        }
+
+        // Quarta Pergunta
+        System.out.println("\n4 - \"Death Note\" Ã© o nome de um caderno com poderes Capazes de...");
+        System.out.println("A - Matar qualquer humano que tiver escrito o nome");
+        System.out.println("B - Matar qualquer humano que tocÃ¡-lo");
+        System.out.println("C - Pode entrar em contato com Alienigenas");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String quartaPergunta = in.nextLine();
+
+        if (quartaPergunta.equalsIgnoreCase("A")) {
+            pontos++;
+        }
+
+        // Quinta Pergunta
+        System.out.println("\n5 - No anime Death Note, o personagem principal \"Light Yagami\" quando percebe os poderes do caderno, seu principal objetivo com a \"arma\" era torna-lo...");
+        System.out.println("A - Entrar no mundo dos shinigamis");
+        System.out.println("B - Torna-lo um shinigami");
+        System.out.println("C - Deus de um novo mundo");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String quintaPergunta = in.nextLine();
+
+        if (quintaPergunta.equalsIgnoreCase("C")) {
+            pontos++;
+        }
+
+        // Sexta Pergunta
+        System.out.println("\n6 - No anime Bleach, \"Kempachi Zaraki\" Ã© o capitÃ£o de que DivisÃ£o de guarda da corte no Anime?");
+        System.out.println("A - DivisÃ£o 10");
+        System.out.println("B - DivisÃ£o 9");
+        System.out.println("C - DivisÃ£o 11");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String sextaPergunta = in.nextLine();
+
+        if (sextaPergunta.equalsIgnoreCase("C")) {
+            pontos++;
+        }
+
+        // SÃ©tima Pergunta *****************
+        System.out.println("\n7 - No anime Death Note, Light apÃ³s perceber que o Detetive L o investigava, tentou descobrir sua verdadeira identidade para...");
+        System.out.println("A - Sequestra-lo");
+        System.out.println("B - Prende-lo");
+        System.out.println("C - MatÃ¡-lo");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String setimaPergunta = in.nextLine();
+
+        if (setimaPergunta.equalsIgnoreCase("C")) {
+            pontos++;
+        }
+
+        // Oitava Pergunta *****************
+        System.out.println("\n8 - No anime Death Note, Misa Amane Ã© no anime...");
+        System.out.println("A - MÃ£e do Light");
+        System.out.println("B - Namorada do Light");
+        System.out.println("C - IrmÃ£ do Light");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String oitavaPergunta = in.nextLine();
+
+        if (oitavaPergunta.equalsIgnoreCase("B")) {
+            pontos++;
+        }
+
+        // Nona Pergunta *****************
+        System.out.println("\n9 - Quem Ã© o criador do anime Naruto?");
+        System.out.println("A - Akira Toriyama");
+        System.out.println("B - Tsugumi Ohba");
+        System.out.println("C - Massashi Kishimoto");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String nonaPergunta = in.nextLine();
+
+        if (nonaPergunta.equalsIgnoreCase("C")) {
+            pontos++;
+        }
+
+        // DÃ©cima Pergunta *****************
+        System.out.println("\n10 - No anime Dragon Ball Z, ao pegar todas as Esferas do DragÃ£o Ã© concedido a pessoa que as encontrou...");
+        System.out.println("A - Virar um Sayajin");
+        System.out.println("B - Um desejo");
+        System.out.println("C - Teletransporte");
+
+        System.out.print("Informe a opÃ§Ã£o: ");
+        String decimaPergunta = in.nextLine();
+
+        if (decimaPergunta.equalsIgnoreCase("B")) {
+            pontos++;
+        }
+
+        System.out.println("\n" + nome + ", A sua pontuaÃ§Ã£o foi: " + pontos);
+
+        in.close();
+    }
+}

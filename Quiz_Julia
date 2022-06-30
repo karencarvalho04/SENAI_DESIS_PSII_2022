@@ -1,0 +1,338 @@
+package quizJulia;
+
+import java.util.Scanner;
+
+public class quiz {
+
+	public static void main(String[] args) {
+	 Scanner tec = new Scanner(System.in);
+	 
+	 // -------------------------------------	 
+	 // |  DESENVOLVEDORA: JÃšLIA BEATRIZ    |
+	 // |  INSTUTUIÃ‡ÃƒO: SENAI               |
+	 // |  DATA: 24/06/2022                 |
+	 // -------------------------------------
+	 
+	 String nome;
+	 int opcao, quiz1, ponto = 0, inicio = 0;
+	 
+	 System.out.println("Bem vindx ao QUIZ 9Â¾!");
+	 System.out.print("Insira seu nome por favor: ");
+	 nome = tec.next();
+	 System.out.println("------------------------------------");
+	
+	
+		 
+	 System.out.println("Gostaria de iniciar o Quiz? Sim digite 1 NÃ£o digite 2");
+	 inicio = tec.nextInt();
+	 
+	 while(inicio == 1) {
+		 //colocando while para ele repetir sempre q a pessoa digita o numero 1 
+	 
+	 
+	 System.out.println("--------------- MENU ---------------");
+	 System.out.println("1) Iniciar o Quiz");
+	 System.out.println("2) CrÃ©ditos do Quiz");
+	 System.out.println("3) Sair");
+	 System.out.println("------------------------------------");
+	 System.out.print("Informe a opÃ§Ã£o desejada: ");
+	 opcao = tec.nextInt();
+
+	 switch(opcao){ //colocando switch para o menu principal
+
+	 case (1): 
+		 System.out.println("Muito bem " + nome + " valor comeÃ§ar o Quiz!!!");
+	     System.out.println("VocÃª acha que conhece o mundo de Harry Potter tÃ£o bem assim? Pois bem......alohomora");
+	     
+		 System.out.println("--------------- RESPONDA ---------------");
+		 System.out.println("Qual era o nome completo da mÃ£e de Harry Potter? ");
+		 System.out.println("1) LÃ­lian Evans Potter");
+		 System.out.println("2) LÃ­lian James Potter");
+		 System.out.println("3) LÃ­lian Potter");
+		 System.out.println("------------------------------------");
+		 System.out.print("Informe a opÃ§Ã£o desejada: ");
+		 quiz1 = tec.nextInt();
+		 
+		 if(quiz1 == 1) { //analisando se o usuario colocou a opcao correta
+			 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+			 ponto++;
+			 
+			 System.out.println("                                                   ");
+ 
+		 }else {
+			 System.out.println("Que pena, vocÃª errou! O nome dela era LÃ­lian Evans Potter, bora para a prÃ³xima!");
+		 
+			 System.out.println("                                                   ");
+		 
+		 }
+		 
+		     System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Em que filme harry Potter da seu primeiro beijo? ");
+			 System.out.println("1) Harry Potter e o Enigma do PrÃ­ncipe");
+			 System.out.println("2) Harry Potter e o CÃ¡lice de Fogo");
+			 System.out.println("3) Harry Potter e a Ordem da FÃªnix");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 System.out.println("                                                   ");
+			 
+			 if(quiz1 == 3) {
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! Harry deu sua primeira bitoquinha em Ordem da FÃªnix, bora para a prÃ³xima!");
+			 
+				 System.out.println("                                                   ");
+				 
+			 }
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Com quantos anos dumbledore morreu? ");
+			 System.out.println("1) 89 anos");
+			 System.out.println("2) 116 anos");
+			 System.out.println("3) 99 anos");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 System.out.println("                                                   ");
+			 
+			 if(quiz1 == 2) {
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! O vÃ©io morreu com 116 anos, bora para a prÃ³xima!");
+			 
+				 System.out.println("                                                   ");
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("De quem Ã© essa frase: 'Controle suas emoÃ§Ãµes e discipline sua mente.' ");
+			 System.out.println("1) Severo Snape");
+			 System.out.println("2) Alvo Dumbledore");
+			 System.out.println("3) Sirius Black");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 1) {
+				 
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! Quem disse foi o mestre Snape, bora para a prÃ³xima!");
+				 
+				 System.out.println("                                                   ");
+			 
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Qual era o patrono de Draco Malfoy? ");
+			 System.out.println("1) Ã�guia");
+			 System.out.println("2) Cachorro");
+			 System.out.println("3) Doninha");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 3) {
+				 
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! Era uma Doninha, bora para a prÃ³xima!");
+				 
+				 System.out.println("                                                   ");
+			 
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Quem criou o Mapa do Maroto? ");
+			 System.out.println("1) Remo Lupin, Pedro Pettigrew, Sirius Black e Tiago Potter");
+			 System.out.println("2) Sirius Black e Tiago Potter");
+			 System.out.println("3) Remo Lupin, Pedro Pettigrew e Sirius Black");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 1) {
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! Quem criou foi Lupin, Pedro Pettigrew, Sirius e Tiago,bora para a prÃ³xima!");
+				 
+				 System.out.println("                                                   ");
+			 
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Qual o nome dos filhos de Hermione e Rony? ");
+			 System.out.println("1) Arthur e Felice");
+			 System.out.println("2) Hugo e Rosa");
+			 System.out.println("3) James e Lisa");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 2) {
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! Sangue ruim Ã© quem Ã© filho de pais trouxas, bora para a prÃ³xima!");
+				 
+				 System.out.println("                                                   ");
+			 
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Por que Hermione foi chamada de sangue ruim por Draco Malfoy ? ");
+			 System.out.println("1) Sangue Ruim Ã© um termo ofensivo e insultuoso para denominar bruxos ou bruxas que nasceram de pais de classe baixa");
+			 System.out.println("2) Sangue Ruim Ã© um termo ofensivo e insultuoso para denominar bruxos ou bruxas que sÃ£o adotados");
+			 System.out.println("3) Sangue Ruim Ã© um termo ofensivo e insultuoso para denominar bruxos ou bruxas que nasceram de pais Trouxas");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 3) {
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! Sangue ruim Ã© quem Ã© filho de pais trouxas, bora para a prÃ³xima!");
+				 
+				 System.out.println("                                                   ");
+			 
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Quantos irmÃ£os Rony Weasley tem? ");
+			 System.out.println("1) 6");
+			 System.out.println("2) 5");
+			 System.out.println("3) 7");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 1) {
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+	 
+				 System.out.println("                                                   ");
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! O bichinho tem 6 irmÃ£os, bora para a prÃ³xima!");
+			 
+				 System.out.println("                                                   ");
+			 }
+			 
+			 System.out.println("                                                   ");
+			 System.out.println("--------------- RESPONDA ---------------");
+			 System.out.println("Quem fala 'Always'? ");
+			 System.out.println("1) Remo Lupin");
+			 System.out.println("2) Severo Snape");
+			 System.out.println("3) Harry Potter");
+			 System.out.println("------------------------------------");
+			 System.out.print("Informe a opÃ§Ã£o desejada: ");
+			 quiz1 = tec.nextInt();
+			 
+			 if(quiz1 == 1) {
+				 System.out.println("                                                   ");
+				 System.out.println("ParabÃ©ns, vocÃª acertou! Bora para a prÃ³xima.");
+				 ponto++;
+				 
+				 System.out.println("                                                   ");
+	 
+			 }else {
+				 System.out.println("Que pena, vocÃª errou! O bichinho tem 6 irmÃ£os, bora para a prÃ³xima!");
+			 
+				 System.out.println("                                                   ");
+				 
+			 }
+ 
+			 System.out.println("                                                   ");
+			 System.out.println("                                                   ");
+			 System.out.println("---------------------------------------------------------------------------");
+			 System.out.println("                                                                           ");
+			 System.out.println("LOADING... â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ]99% ");
+			 System.out.println("                                                                           ");
+			 System.out.println("PONTUAÃ‡ÃƒO FINAL: " + ponto + " pontos");
+			 System.out.println("                                                   ");
+			 
+		 break;
+	 
+	 case (2): 
+		 System.out.println("Obrigada querida professora Karen por fazer eu passar por todos esse estresse de criar esse Quiz, brinks hihihi.");
+	     System.out.println("                                                   ");
+	     System.out.println("â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿\r\n"
+	     		+ "â£¿â Ÿâ «â¢»â£¿â£¿â£¿â£¿â¢Ÿâ£©â¡�â£™â ›â¢›â£¿â£¿â£¿â ›â ›â ›â ›â »â£¿â£¿â£¿â£¿â£¿â¡¿â¢¿â£¿\r\n"
+	     		+ "â£¿â ¤â „â „â ™â¢¿â£¿â£¿â£¿â¡¿â ¿â ›â ›â¢›â£§â£¿â ‡â „â ‚â „â „â „â ˜â£¿â£¿â£¿â£¿â �â „â¢»\r\n"
+	     		+ "â£¿â£¿â£¿â£¿â£¶â£„â£¾â£¿â¢Ÿâ£¼â ’â¢²â¡”â£ºâ£¿â£§â „â „â£ â ¤â¢¤â¡€â „â Ÿâ ‰â£ â£¤â£¤â£¤â£¾\r\n"
+	     		+ "â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£Ÿâ£€â£¬â£µâ£¿â£¿â£¿â£¶â¡¤â ™â „â ˜â ƒâ „â£´â£¾â£¿â£¿â£¿â£¿â£¿\r\n"
+	     		+ "â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â¡¿â¢»â ¿â¢¿â£¿â£¿â ¿â ‹â �â „â ‚â ‰â ’â¢˜â£¿â£¿â£¿â£¿â£¿â£¿â£¿\r\n"
+	     		+ "â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â¡¿â£¡â£·â£¶â£¤â£¤â£€â¡€â „â „â „â „â „â „â „â£¾â£¿â£¿â£¿â£¿â£¿â£¿\r\n"
+	     		+ "â£¿â£¿â£¿â£¿â£¿â£¿â£¿â¡¿â£¸â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£·â£¦â£°â „â „â „â „â¢¾â ¿â¢¿â£¿â£¿â£¿â£¿\r\n"
+	     		+ "â£¿â¡¿â ‹â£¡â£¾â£¿â£¿â£¿â¡Ÿâ ‰â ‰â ˆâ ‰â ‰â ‰â ‰â ‰â „â „â „â ‘â „â „â �â¡‡â „â ˆâ ™â ›â ‹\r\n"
+	     		+ "â ‹â „â£¾â£¿â£¿â£¿â£¿â¡¿â „â „â „â „â „â „â „â „â „â „â „â „â „â „â „â¢ â¡‡â „â „â „â „â „\r\n"
+	     		+ "â „â¢¸â£¿â£¿â£¿â£¿â£¿â£¯â „â¢ â¡€â „â „â „â „â „â „â „â „â£€â „â „â „â „â �â „â „â „â „â „\r\n"
+	     		+ "â �â¢¸â£¿â£¿â£¿â£¿â£¿â£¯â£§â£¬â£¿â£¤â£�â£‚â£„â£€â£ â¡´â –â ˆâ „â „â „â „â „â „â „â „â „â „\r\n"
+	     		+ "â ˆâ ˆâ£¿â£Ÿâ£¿â£¿â£¿â£¿â£¿â£¿â£¿â£¿â£½â£‰â¡‰â ‰â ˆâ �â „â �â „â „â „â „â¡‚â „â „â „â „â „\r\n"
+	     		+ "â „â „â ™â£¿â£¿â ¿â£¿â£¿â£¿â£¿â£·â¡¤â ˆâ ‰â ‰â �â „â „â „â „â „â „â „â  â ”â „â „â „â „â „\r\n"
+	     		+ "â „â „â „â¡ˆâ¢¿â£·â£¿â£¿â¢¿â£¿â£¿â£·â¡¦â¢¤â¡€â „â „â „â „â „â „â¢�â£ â¡¿â �â „â „â „â „â „");
+	     
+		 break;
+	 
+	 case (3): 
+		 System.out.println("Volte sempre!!! :)");
+		 break;
+		 
+	default: //caso digite uma opcao inesistente
+		System.out.println("OpÃ§Ã£o desejada nÃ£o existe, volte ao menu!");
+     
+
+	 	}
+	 System.out.println("Deseja continuar? Sim digite 1 NÃ£o digite 2");
+	 inicio = tec.nextInt();
+	 
+	 } 
+	 System.out.println("Tudo bem, fica para a prÃ³xima :)");
+	 
+	 
+	 tec.close();
+	 
+	}
+}

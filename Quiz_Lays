@@ -1,0 +1,286 @@
+//Best programmer: Lays
+
+import java.util.Scanner;
+
+public class quiz {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.print("Digite seu nome: ");
+		String jogador = sc.next();
+		
+		//operador lógicos 
+		boolean sair = false;
+		
+		//laço de repetitição para repetir as quetões
+		do {
+			
+			int pontuacao = 0;
+	
+			
+			System.out.print("Questão 1: ");
+			System.out.println("Que animal é este?");
+			//leao
+			System.out.println("   _   _\r\n"
+					+ " _/ \\|/ \\_\r\n"
+					+ "/\\\\/   \\//\\\r\n"
+					+ "\\|/<\\ />\\|/\r\n"
+					+ "/\\   _   /\\\r\n"
+					+ "\\|/\\ Y /\\|/\r\n"
+					+ " \\/|v-v|\\/\r\n"
+					+ "  \\/\\_/\\/");
+			System.out.println("Opção 1: Golfinho");
+			System.out.println("Opção 2: Leão");
+			System.out.println("Opção 3: Porco");
+			
+			System.out.print("Insira a resposta: ");
+			int resposta1 = sc.nextInt();
+			
+			//condição para resposta diferente ou igual a certa
+			if (resposta1 == 2) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+		
+
+	
+			System.out.print("Questão 2: ");
+			System.out.println("Que animal é este?");
+			//gato
+			System.out.println("	\r\n"
+					+ "                        _\r\n"
+					+ "                       | \\\r\n"
+					+ "                       | |\r\n"
+					+ "                       | |\r\n"
+					+ "  |\\                   | |\r\n"
+					+ " /, ~\\                / /\r\n"
+					+ "X     `-.....-------./ /\r\n"
+					+ " ~-. ~  ~              |\r\n"
+					+ "    \\             /    |\r\n"
+					+ "     \\  /_     ___\\   /\r\n"
+					+ "     | /\\ ~~~~~   \\ |\r\n"
+					+ "     | | \\        || |\r\n"
+					+ "     | |\\ \\       || )\r\n"
+					+ "    (_/ (_/      ((_/");
+			System.out.println("Opção 1: Porco");
+			System.out.println("Opção 2: Leão");
+			System.out.println("Opção 3: Gato");
+			System.out.print("Insira a resposta: ");
+			
+			int resposta2 = sc.nextInt();
+			
+			if (resposta2 == 3) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+			
+			System.out.print("Questão 3: ");
+			System.out.println("Que animal é este?");
+			//golfinho
+			System.out.println("	\r\n"
+					+ "  _../|_\r\n"
+					+ "='__   _~-.\r\n"
+					+ "     \\'  ~-`\\._\r\n"
+					+ "            |/~`\r\n"
+					+ "..   ..   ..   ..\r\n"
+					+ "(._.`(._.`(._.`(.\r\n"
+					+ "");
+			System.out.println("Opção 1: Golfinho");
+			System.out.println("Opção 2: Caracol");
+			System.out.println("Opção 3: Carangueijo");
+
+			System.out.print("Insira a resposta: ");
+			int resposta3 = sc.nextInt();
+			
+			if (resposta3 == 1) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+			
+			System.out.print("Questão 4: ");
+			System.out.println("Que animal é este?");
+			//porco
+			System.out.println("        \r\n"
+					+ "  ,--.-'-,--.\r\n"
+					+ "  \\  /-~-\\  /\r\n"
+					+ " / )' a a `( \\\r\n"
+					+ "( (  ,---.  ) )\r\n"
+					+ " \\ `(_o_o_)' /\r\n"
+					+ "  \\   `-'   /\r\n"
+					+ "   | |---| |     \r\n"
+					+ "   [_]   [_]\r\n"
+					+ "");
+			System.out.println("Opção 1: Golfinho");
+			System.out.println("Opção 2: Leão");
+			System.out.println("Opção 3: Porco");
+
+			System.out.print("Insira a resposta: ");
+			int resposta4 = sc.nextInt();
+			
+			if (resposta4 == 3) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+			
+	
+			System.out.print("Questão 5: ");
+			System.out.println("Que animal é este?");
+			//caracol
+			System.out.println("     _____\r\n"
+					+ "   .'     `.\r\n"
+					+ "  /  .-=-.  \\   \\ __\r\n"
+					+ "  | (  C\\ \\  \\_.'')\r\n"
+					+ " _\\  `--' |,'   _/\r\n"
+					+ "/__`.____.'__.-'");
+			System.out.println("Opção 1: Caracol");
+			System.out.println("Opção 2: Porco");
+			System.out.println("Opção 3: Carangueijo");
+
+			System.out.print("Insira a resposta: ");
+			int resposta5 = sc.nextInt();
+			
+			if (resposta5 == 1) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+		
+			System.out.print("Questão 6: ");
+			System.out.println("Que animal é este?");
+			//carangueijo
+			System.out.println("   __       __\r\n"
+					+ "  / <`     '> \\\r\n"
+					+ " (  / @   @ \\  )\r\n"
+					+ "  \\(_ _\\_/_ _)/\r\n"
+					+ "(\\ `-/     \\-' /)\r\n"
+					+ " \"===\\     /===\"\r\n"
+					+ "  .==')___(`==.    \r\n"
+					+ " ' .='     `=.");
+			System.out.println("Opção 1: Golfinho");
+			System.out.println("Opção 2: Caracol");
+			System.out.println("Opção 3: Carangueijo");
+
+			System.out.print("Insira a resposta: ");
+			int resposta6 = sc.nextInt();
+			
+			if (resposta6 == 3) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+		
+		
+	
+			System.out.print("Questão 7: ");
+			System.out.println("A cor da juba diz a idade do animal");
+			System.out.println("Opção 1: Porco");
+			System.out.println("Opção 2: Leão");
+			//correto
+			System.out.println("Opção 3: Gato");
+			
+
+			System.out.print("Insira a resposta: ");
+			int resposta7 = sc.nextInt();
+			
+			if (resposta7 == 2) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+
+
+			System.out.print("Questão 8: ");
+			System.out.println("Têm a capacidade de chegar até 300 metros de profundidade.");
+			System.out.println("Opção 1: Golfinho");
+			//correto
+			System.out.println("Opção 2: Caracol");
+			System.out.println("Opção 3: Carangueijo");
+			
+
+			System.out.print("Insira a resposta: ");
+			int resposta8 = sc.nextInt();
+			
+			if (resposta8 == 1) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+
+			System.out.print("Questão 9: ");
+			System.out.println("A fêmea é capaz de depositar mais de 2 mil ovos em seu período fertil.");
+			System.out.println("Opção 1: Golfinho");
+			System.out.println("Opção 2: Leão");
+			System.out.println("Opção 3: Porco");
+			//correto
+
+			System.out.print("Insira a resposta: ");
+			int resposta9 = sc.nextInt();
+			
+			if (resposta9 == 3) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+
+			System.out.print("Questão 10: ");
+			System.out.println("Animal que possui uma visão panorâmica de 310 °");
+			System.out.println("Opção 1: Caracol");
+			System.out.println("Opção 2: Porco");
+			//correto
+			System.out.println("Opção 3: Carangueijo");
+
+			System.out.print("Insira a resposta: ");
+			int resposta10 = sc.nextInt();
+			
+			if (resposta10 == 2) {
+				pontuacao ++;
+			}
+			
+			else {
+				System.out.println("Resposta incorreta.");
+			}
+			
+
+			System.out.println(jogador + " sua pontuação é igual a " + pontuacao);
+			
+		
+		} while (!sair);
+		
+		
+	sc.close();	
+
+	}
+
+}
